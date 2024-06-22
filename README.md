@@ -10,6 +10,7 @@ To set up this project:
     
     ```bash
     python -m venv .venv
+    source .venv/bin/activate
     
     ```
     
