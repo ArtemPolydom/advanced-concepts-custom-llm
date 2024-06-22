@@ -25,15 +25,14 @@ To set up this project:
 3. **Install Dependencies**
     
     ```bash
-    make install
-    
+    pip install --upgrade pip &&\ 
+        pip install -r requirements.txt    
     ```
     
 4. **Run the FastAPI Server**
     
     ```bash
-    make dev
-    
+    fastapi dev ./app/main.py 
     ```
     
 
