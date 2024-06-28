@@ -17,15 +17,6 @@ client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 @app.post("/chat/completions")
 async def chat_completion_stream(vapi_payload: ChatRequest):
-    """
-    Endpoint to handle chat completions streaming from OpenAI's API.
-    
-    Args:
-        request (ChatRequest): The request body containing model, messages, temperature, and tools.
-
-    Returns:
-        StreamingResponse: A streaming response with the chat completion data.
-    """
     try:
         response = await client.chat.completions.create(
             model=vapi_payload.model,
